@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Este es el titulo de la pagina-->
+    <title>Calculadora Web</title>
+    <!--Estos los links que llama a los diferentes archivos externos-->
+    <link href="estilos.css" rel="stylesheet" />
+    <script src="control.js" type="text/javascript"></script>
+    <script src="calculadora.js" type="text/javascript"></script>
+    <script src="get.js" type="text/javascript" defer></script>
+</head>
+<body>
+   <!-- Encabezado principal de la pagina -->
+   <h1>
+      <b>
+         <i>
+             "Mi Calculadora"
+         </i>
+      </b>
+   </h1>
+    <div class="contenedor">
+        <div class="calculadora">
+            <div class="display">
+                <div id="num-anterior"></div>
+                <div id="num-actual"></div>
+            </div>
+            <!--Estos son los botones: -->
+            <button 
+               class="borrar-todo" 
+               onclick=" controlador.borrarTodo() ">C
+            </button>
+            <button 
+               onclick=" controlador.borrarUno() ">&larr;
+            </button>
+            <!-- Este es el boton que cerrara la pagina web -->
+            <button 
+               class="cerrarApp" onclick="window.close()">Off
+            </button>
+            <!-- Este es un operador el cual dividira -->
+            <button 
+               class="operador" value="dividir">÷
+            </button>
+            <button 
+               class="num">7
+            </button>
+            <button 
+               class="num">8
+            </button>
+            <button
+               class="num">9
+            </button>
+              <!-- Este es un operador el cual multiplicara -->
+            <button 
+               class="operador" value="multiplicar">X
+            </button>
+            <button 
+               class="num">4
+            </button>
+            <button 
+               class="num">5
+            </button>
+            <button 
+               class="num">6
+            </button>
+              <!-- Este es un operador el cual restara -->
+            <button 
+               class="operador" value="restar">-
+            </button>
+            <button 
+               class="num">1
+            </button>
+            <button 
+               class="num">2
+            </button>
+            <button 
+               class="num">3
+            </button>
+              <!-- Este es un operador el cual sumara -->
+            <button 
+               class="operador" value="sumar">+
+            </button>
+            <button 
+               class="num">0
+            </button>
+            <button 
+               class="num">.
+            </button>
+              <!-- Este es un operador el cual igualadara -->
+            <button 
+               class="operador" value="igual" id="cero">=
+            </button>
+            
+        </div>
+    </div>
+</body>
+</html>
